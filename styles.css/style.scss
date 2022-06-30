@@ -1,0 +1,59 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	width: max-content;
+	padding: 8px 12px;
+}
+
+.top-bar {
+	background-color: gray;
+	height: 8vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	h1 {
+		margin: 0;
+		justify-self: center;
+	}
+}
+
+.book-container {
+	background-color: darkgray;
+	height: 100%;
+	padding: 5%;
+	position: relative;
+	.add-book-window {
+		visibility: hidden;
+		background-color: lightgray;
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		align-items: center;
+		height: 40vh;
+		width: 20vw;
+		min-width: 280px;
+		padding: 2%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+		.read-unread-container {
+			grid-area: 4 / 1 / 5 / -1;
+		}
+		.submit-close-container {
+			grid-area: 5 / 1 / 6 / -1;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			.close-btn {
+				justify-self: flex-end;
+			}
+		}
+	}
+}

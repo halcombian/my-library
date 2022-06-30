@@ -5,8 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Library</title>
+		<link rel="stylesheet" href="styles.css/style.css" />
 	</head>
 	<body>
+		<div class="top-bar">
+			<h1>My Library</h1>
+			<button class="add-book-btn">Add Book</button>
+		</div>
+
+		<div class="book-container">
+			<div class="add-book-window">
+				<label for="title-input">Title: </label>
+				<input type="text" name="title-input" />
+
+				<label for="author-input">Author: </label>
+				<input type="text" name="author-input" />
+
+				<label for="pages-input">Pages: </label>
+				<input type="number" name="pages-input" />
+
+				<div class="read-unread-container">
+					<button class="read-unread-btn" id="read-btn">Read</button>
+					<button class="read-unread-btn" id="unread-btn">Unread</button>
+				</div>
+
+				<div class="submit-close-container">
+					<button class="submit-btn">Submit</button>
+					<button class="close-btn">Close</button>
+				</div>
+			</div>
+		</div>
+
 		<script src="main.js"></script>
 	</body>
 </html>
