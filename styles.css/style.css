@@ -85,4 +85,27 @@ button {
 .book-container .add-book-window .submit-close-container .close-btn {
   justify-self: flex-end;
 }
+
+.book-container .book-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgray;
+  height: 30vh;
+  width: 15vw;
+}
+
+.book-container .book-card .book-card-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightsteelblue;
+}
 /*# sourceMappingURL=style.css.map */

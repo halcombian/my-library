@@ -56,4 +56,17 @@ button {
 			}
 		}
 	}
+	.book-card {
+		display: flex;
+		background-color: lightgray;
+		height: 30vh;
+		width: 15vw;
+		.book-card-info {
+			width: 100%;
+			display: flex;
+			align-self: flex-end;
+			flex-direction: column;
+			background-color: lightsteelblue;
+		}
+	}
 }
